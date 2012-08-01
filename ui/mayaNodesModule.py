@@ -1,6 +1,6 @@
-from ui import nodeModule, nodeWidgetsModule
 import maya.cmds as cmds
-import ui.icons_rc
+import nodeModule, nodeWidgetsModule
+import icons_rc
 
 MayaNodes = {}
 

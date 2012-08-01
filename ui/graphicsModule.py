@@ -1,7 +1,8 @@
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
-import  cPickle, math, weakref, mayaNodesModule, nodeWidgetsModule, userListModule, maya.cmds as cmds
-from ui import nodeModule
+import cPickle, math, weakref, mayaNodesModule, nodeWidgetsModule, userListModule
+import maya.cmds as cmds
+import nodeModule
 
 global i
 

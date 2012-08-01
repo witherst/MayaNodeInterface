@@ -1,7 +1,7 @@
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 import cPickle, weakref
-from ui import nodeModule, mayaNodesModule
+import nodeModule, mayaNodesModule
 
 class ListBaseClass(QListWidget):
 

@@ -1,9 +1,12 @@
+import os, sip, sys
+
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
-from ui.gui_from_designer import Ui_MainWindow
-import os, sip, sys
-from ui import graphicsModule, mayaNodesModule, userListModule, icons_rc
-import ui
+
+from .ui.gui_from_designer import Ui_MainWindow
+from .ui import graphicsModule, mayaNodesModule, userListModule, icons_rc
+
+app = None
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     
@@ -82,7 +85,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.lookList.itemClicked.connect(self.changeDescription)
         self.scene.categoryItemClicked.connect(self.setWidgetMenu)
 
-global app
+
+def show():
+    global app
+
+    # Use a shared instance of QApplication
+    import maya.OpenMayaUI as mui
+    app = QApplication.instance()
+
+    # Get a pointer to the maya main window
+    ptr = mui.MQtUtil.mainWindow()
+    # Use sip to wrap the pointer into a QObject
+    win = sip.wrapinstance(long(ptr), QObject)
+    form = MainWindow(win)
+    form.show()
 
 '''
 Run App
@@ -95,16 +111,4 @@ if __name__ == "__main__":
     form.show()
     app.exec_()
 
-else:
-    print "In Maya"
-    # Use a shared instance of QApplication
-    import maya.OpenMayaUI as mui
-    app = QApplication.instance()
-
-    # Get a pointer to the maya main window
-    ptr = mui.MQtUtil.mainWindow()
-    # Use sip to wrap the pointer into a QObject
-    win = sip.wrapinstance(long(ptr), QObject)
-    form = MainWindow(win)
-    form.show()
 
