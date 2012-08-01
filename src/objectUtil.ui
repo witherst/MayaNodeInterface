@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>objectUtil</class>
+ <widget class="QWidget" name="objectUtil">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>186</width>
+    <height>298</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="objectNameLabel">
+     <property name="text">
+      <string>Object Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="translateLabel">
+     <property name="text">
+      <string>Translate:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="rotateLabel">
+     <property name="text">
+      <string>Rotate:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QLabel" name="scaleLabel">
+     <property name="text">
+      <string>Scale:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="11" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="8" column="0" colspan="3">
+    <widget class="QPushButton" name="pickObject">
+     <property name="text">
+      <string>Pick Object</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="3">
+    <widget class="QLabel" name="waitingLabel">
+     <property name="text">
+      <string>Awaiting selection from Maya...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QLineEdit" name="scaleZ"/>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="scaleY"/>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLineEdit" name="rotateZ"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLineEdit" name="translateX"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLineEdit" name="rotateX"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLineEdit" name="scaleX"/>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLineEdit" name="translateZ"/>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="rotateY"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="translateY"/>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QLineEdit" name="objName"/>
+   </item>
+   <item row="9" column="0" colspan="3">
+    <widget class="QPushButton" name="clearObject">
+     <property name="text">
+      <string>Clear Object</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

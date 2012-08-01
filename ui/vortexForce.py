@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'vortexForce.ui'
+#
+# Created: Sat Mar 17 16:35:53 2012
+#      by: PyQt4 UI code generator 4.7.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+class Ui_vortexForce(object):
+    def setupUi(self, vortexForce):
+        vortexForce.setObjectName("vortexForce")
+        vortexForce.resize(289, 221)
+        self.gridLayout = QtGui.QGridLayout(vortexForce)
+        self.gridLayout.setObjectName("gridLayout")
+        self.magnitudeLabel = QtGui.QLabel(vortexForce)
+        self.magnitudeLabel.setObjectName("magnitudeLabel")
+        self.gridLayout.addWidget(self.magnitudeLabel, 0, 0, 1, 1)
+        self.magnitude = QtGui.QDoubleSpinBox(vortexForce)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.magnitude.sizePolicy().hasHeightForWidth())
+        self.magnitude.setSizePolicy(sizePolicy)
+        self.magnitude.setMinimum(-999999999.0)
+        self.magnitude.setMaximum(999999999.0)
+        self.magnitude.setProperty("value", 5.0)
+        self.magnitude.setObjectName("magnitude")
+        self.gridLayout.addWidget(self.magnitude, 0, 1, 1, 1)
+        self.attenuationLabel = QtGui.QLabel(vortexForce)
+        self.attenuationLabel.setObjectName("attenuationLabel")
+        self.gridLayout.addWidget(self.attenuationLabel, 1, 0, 1, 1)
+        self.attenuation = QtGui.QDoubleSpinBox(vortexForce)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.attenuation.sizePolicy().hasHeightForWidth())
+        self.attenuation.setSizePolicy(sizePolicy)
+        self.attenuation.setMinimum(-999999999.0)
+        self.attenuation.setMaximum(999999999.0)
+        self.attenuation.setProperty("value", 1.0)
+        self.attenuation.setObjectName("attenuation")
+        self.gridLayout.addWidget(self.attenuation, 1, 1, 1, 1)
+        self.axisLabel = QtGui.QLabel(vortexForce)
+        self.axisLabel.setObjectName("axisLabel")
+        self.gridLayout.addWidget(self.axisLabel, 2, 0, 1, 1)
+        self.axisX = QtGui.QDoubleSpinBox(vortexForce)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.axisX.sizePolicy().hasHeightForWidth())
+        self.axisX.setSizePolicy(sizePolicy)
+        self.axisX.setMinimum(-999999999.0)
+        self.axisX.setMaximum(999999999.0)
+        self.axisX.setObjectName("axisX")
+        self.gridLayout.addWidget(self.axisX, 3, 0, 1, 1)
+        self.axisY = QtGui.QDoubleSpinBox(vortexForce)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.axisY.sizePolicy().hasHeightForWidth())
+        self.axisY.setSizePolicy(sizePolicy)
+        self.axisY.setMinimum(-999999999.0)
+        self.axisY.setMaximum(999999999.0)
+        self.axisY.setProperty("value", 1.0)
+        self.axisY.setObjectName("axisY")
+        self.gridLayout.addWidget(self.axisY, 3, 1, 1, 1)
+        self.axisZ = QtGui.QDoubleSpinBox(vortexForce)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.axisZ.sizePolicy().hasHeightForWidth())
+        self.axisZ.setSizePolicy(sizePolicy)
+        self.axisZ.setMinimum(-999999999.0)
+        self.axisZ.setMaximum(999999999.0)
+        self.axisZ.setObjectName("axisZ")
+        self.gridLayout.addWidget(self.axisZ, 3, 2, 1, 1)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 3, 3, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem1, 4, 2, 1, 1)
+
+        self.retranslateUi(vortexForce)
+        QtCore.QMetaObject.connectSlotsByName(vortexForce)
+
+    def retranslateUi(self, vortexForce):
+        vortexForce.setWindowTitle(QtGui.QApplication.translate("vortexForce", "Form", None, QtGui.QApplication.UnicodeUTF8))
+        self.magnitudeLabel.setText(QtGui.QApplication.translate("vortexForce", "Magnitude", None, QtGui.QApplication.UnicodeUTF8))
+        self.attenuationLabel.setText(QtGui.QApplication.translate("vortexForce", "Attenuation", None, QtGui.QApplication.UnicodeUTF8))
+        self.axisLabel.setText(QtGui.QApplication.translate("vortexForce", "Axis:", None, QtGui.QApplication.UnicodeUTF8))
+

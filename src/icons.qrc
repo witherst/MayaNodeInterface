@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="/" >
+    <file alias="attrBase">images/attrBase.svg</file>
+    <file alias="attrBehavior.svg">images/attrBehavior.svg</file>
+    <file alias="attrConnection.svg">images/attrConnection.svg</file>
+    <file alias="attrEmitter.svg">images/attrEmitter.svg</file>
+    <file alias="attrLook.svg">images/attrLook.svg</file>
+    <file alias="behaviorBase.svg">images/behaviorBase.svg</file>
+    <file alias="behaviorInputConnection.svg">images/behaviorInputConnection.svg</file>
+    <file alias="behaviorOutputConnection.svg">images/behaviorOutputConnection.svg</file>
+    <file alias="catAttrConnection.svg">images/catAttrConnection.svg</file>
+    <file alias="catBase.svg">images/catBase.svg</file>
+    <file alias="conditionBase.svg">images/conditionBase.svg</file>
+    <file alias="emitterBase.svg">images/emitterBase.svg</file>
+    <file alias="hugin.svg">images/hugin.svg</file>
+    <file alias="lookBase.svg">images/lookBase.svg</file>
+    <file alias="lookInputConnection.svg">images/lookInputConnection.svg</file>
+    <file alias="lookOutputConnection.svg">images/lookOutputConnection.svg</file>
+    <file alias="objectNode.svg">images/objectNode.svg</file>
+    <file alias="X.svg">images/X.svg</file>
+  </qresource>
+</RCC>
