@@ -22,6 +22,12 @@ import MayaNodeInterface
 MayaNodeInterface.show()
 ```
 
+## Video Sample ##
+
+Here's a little sample of what the code actually does.
+
+https://vimeo.com/40380911
+
 ## Contributors ##
 
 A **HUGE THANKS** to Justin Israel [(justinfx)](https://github.com/justinfx) and all of his help with this project. It wouldn't have been possible (no, literally) without him.
